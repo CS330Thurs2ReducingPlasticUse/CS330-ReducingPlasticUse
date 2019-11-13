@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Reducing Plastic Use</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script  src="bootstrap-datepicker.js" ></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Reducing Plastic </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home_page.html">Home</a></li>
+        <!---<li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>--->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <!-- <div class="row content"> -->
+
+    <div class="col-lg-8 text-center">
+      <h2>Input Your Plastic Use</h2>
+      <h5>Input the Date:</h5>
+      <div class="form-group">
+        <div class="input-group date" id ="datepicker">
+          <input class="form-control" type="text"/>
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+      </div>
+      <script type ="text/javascript">
+        $(function (){
+          $('#datepicker').datepicker({
+            format:'LT'
+          });
+        });
+      </script>
+
+    <div class = "form-group">
+      <h5>How many coffees did you drink:</h5>
+      <input class = "form-control" id = "coffeeInput" type = "text">
+
+    </div>
+    <p> How many disposable cups did you use:</p>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Disposable cups
+        <span class="caret"></span>
+      </button>
+        <ul class="dropdown-menu dropdown-menu-center">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+        </ul>
+      </div>
+      <p>How many reusable cups did you use:</p>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+          Reusable cups
+          <span class="caret"></span>
+        </button>
+          <ul class="dropdown-menu dropdown-menu-center">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+          </ul>
+        </div>
+        <div class = "form-group">
+          <h5>How much money did you save by using reusable cups:</h5>
+          <input class = "form-control" id = "coffeeInput" type = "text">
+
+        </div>
+
+
+
+
+      <!-- <form class = "form-inline">
+        <div class = "form-group">
+          <label for = "plasticCupInput"> I used </label>
+          <input class = "form-control" id = "plasticCupInput" type = "text">
+          <label> disposable cups </label>
+        </div>
+        <div class = "form-group">
+          <label for = "reusableCupInput"> I used </label>
+          <input class = "form-control" id = "reusableCupInput" type = "text">
+          <label> save cups cups </label>
+        </div>
+      </form> -->
+
+
+
+      <div>
+        <a href = "home_page.html">
+          <button type="button" class="btn btn-default" id = "plasticEnter">Enter</button>
+        </a>
+      </div>
+    </div>
+    <!--<div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>--->
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
