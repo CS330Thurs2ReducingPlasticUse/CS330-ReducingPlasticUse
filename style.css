@@ -33,7 +33,7 @@ footer {
 
 #plasticEnter {
   position: relative;
-  bottom: 0px;
+  bottom: 7px;
 }
 .center{
     margin: 0 auto;
@@ -43,5 +43,16 @@ footer {
 #datepicker{
   width: 175px;
   position: relative;
-  left: 165px;
+  left: 130px;
 }
+
+#coffeeInput{
+  position:relative;
+  left:540px;
+}
+
+#resuableInput{
+  position:relative;
+  left:540px;
+}
+
