@@ -42,5 +42,6 @@ footer {
 }
 #datepicker{
   width: 175px;
-
+  position: relative;
+  left: 165px;
 }
