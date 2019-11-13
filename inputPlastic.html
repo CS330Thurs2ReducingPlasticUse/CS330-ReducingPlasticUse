@@ -59,45 +59,37 @@
         <div class="col-lg-4"></div>
     </div>
 
-    <div class = "form-group">
+    <div class = "form-group row">
       <h5>How many coffees did you drink:</h5>
-      <input class = "form-control" id = "coffeeInput" type = "number">
-
+      <div class="col-xs-2">
+        <input class = "form-control" id = "coffeeInput" type = "number">
+      </div>
     </div>
     <p> How many disposable cups did you use:</p>
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-        Disposable cups
-        <span class="caret"></span>
-      </button>
-        <ul class="dropdown-menu dropdown-menu-center">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">6</a></li>
-        </ul>
-      </div>
+      <select class="browser-default custom-selct">
+        <option selected>Disposable cups</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+        <option value="6">Six</option>
+      </select>
       <p>How many reusable cups did you use:</p>
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-          Reusable cups
-          <span class="caret"></span>
-        </button>
-          <ul class="dropdown-menu dropdown-menu-center">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-          </ul>
-        </div>
-        <div class = "form-group">
-          <h5>How much money did you save by using reusable cups:</h5>
-          <input class = "form-control" id = "coffeeInput" type = "number">
-
+         <select class="browser-default custom-selct">
+          <option selected>Reusable cups</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+          <option value="6">Six</option>
+         </select>
+        <div class = "form-group row">
+            <h5>How much money did you save by using reusable cups:</h5>
+          <div class="col-xs-2">
+            <input class = "form-control" id = "resuableInput" type = "number">
+          </div>
         </div>
 
 
