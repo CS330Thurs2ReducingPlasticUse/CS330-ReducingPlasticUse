@@ -35,3 +35,7 @@ footer {
   position: relative;
   bottom: 0px;
 }
+#datepicker{
+  position: relative;
+  left: 320px;
+}
