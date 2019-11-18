@@ -56,3 +56,13 @@ footer {
   left:540px;
 }
 
+#profileEnter{
+  position:relative;
+  left:540px;
+  bottom:7px;
+}
+
+#logInEnter{
+  position:relative;
+  left:540px;
+}
