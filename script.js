@@ -1,14 +1,88 @@
 function createAccount()
 {
-  if (document.getElementById('inputPassword').value != document.getElementById('inputPassword2').value)
-  {
-    document.getElementById('pass1').innerHTML = 'Password: passwords did not match';
-    document.getElementById('pass2').innerHTML = 'Reenter password: passwords did not match';
-  }
-  else {
+  var no_problems = true;
+    if (document.getElementById('inputPassword').value != document.getElementById('inputPassword2').value)
     {
+      no_problems = false;
+      document.getElementById('pass1').innerHTML = 'Password: passwords did not match';
+      document.getElementById('pass2').innerHTML = 'Reenter password: passwords did not match';
+    }
+    if (document.getElementById('inputEmail').value == "")
+    {
+      no_problems = false;
+      document.getElementById('Email').innerHTML = 'Email Address: enter an email address';
+    }
+    else {
+      document.getElementById('Email').innerHTML = 'Email Address:'
+    }
+    if (document.getElementById('inputFirstName').value == "")
+    {
+      no_problems = false;
+      document.getElementById('FirstName').innerHTML = 'First Name: enter a first name';
+    }
+    else {
+      document.getElementById('FirstName').innerHTML = 'First Name:'
+    }
+    if (document.getElementById('inputLastName').value == "")
+    {
+      no_problems = false;
+      document.getElementById('LastName').innerHTML = 'Last Name: enter a last name';
+    }
+    else {
+      document.getElementById('LastName').innerHTML = 'Last Name:'
+    }
+    if (document.getElementById('inputUserName').value == "")
+    {
+      no_problems = false;
+      document.getElementById('UserName').innerHTML = 'Username: enter a username';
+    }
+    else {
+      document.getElementById('UserName').innerHTML = 'Username:'
+    }
+    if (document.getElementById('inputPhoneNumber').value == "")
+    {
+      no_problems = false;
+      document.getElementById('PhoneNumber').innerHTML = 'Phone Number: enter a phone number';
+    }
+    else {
+      document.getElementById('PhoneNumber').innerHTML = 'Phone Number:'
+    }
+    if (document.getElementById('inputPassword').value == "")
+    {
+      no_problems = false;
+      document.getElementById('pass1').innerHTML = 'Password: enter a password';
+    }
+    if (document.getElementById('inputPassword2').value == "")
+    {
+      no_problems = false;
+      document.getElementById('pass2').innerHTML = 'Password: reenter your password';
+    }
+    if (no_problems) {
       window.open('home_page.html','_self');
     }
+}
+
+function login()
+{
+  var no_problems = true
+  if (document.getElementById('inputEmail/Un').value == "")
+  {
+    no_problems = false;
+    document.getElementById('loginUsername').innerHTML = 'Email Address or Username: enter an email or username';
+  }
+  else {
+    document.getElementById('loginUsername').innerHTML = 'Email Address or Username:'
+  }
+  if (document.getElementById('inputPassword3').value == "")
+  {
+    no_problems = false;
+    document.getElementById('loginPassword').innerHTML = 'Password: enter a password';
+  }
+  else {
+    document.getElementById('loginPassword').innerHTML = 'Password:'
+  }
+  if (no_problems) {
+    window.open('home_page.html','_self');
   }
 }
 

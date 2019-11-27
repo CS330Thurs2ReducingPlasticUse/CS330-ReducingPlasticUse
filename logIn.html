@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
   <!-- <script src="script.js"></script> -->
   <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
@@ -39,18 +40,16 @@
 <div class="col-lg-4">
 <form>
   <div class="form-group">
-     <label for="inputEmail/Un">Email Address or Username:</label>
+     <label for="inputEmail/Un" id = 'loginUsername'>Email Address or Username:</label>
       <input type="username" class="form-control" id="inputEmail/Un" aria-describedby= "Un/PwordHelp" placeholder="Enter username or email">
   </div>
   <div class="form-group">
-      <label form="inputPassword2">Password:</label>
-      <input type="password" class="form-control" id="inputPassword2" aria-describedby="passwordHelp" placeholder="Enter password">
+      <label form="inputPassword2" id = 'loginPassword'>Password:</label>
+      <input type="password" class="form-control" id="inputPassword3" aria-describedby="passwordHelp" placeholder="Enter password">
     </div>
 </form>
 <div>
-        <a href = "home_page.html">
-          <button type="button" class="btn btn-default" id = "logInEnter">Enter</button>
-        </a>
+          <button onclick="login()" type="button" class="btn btn-default" id = "logInEnter">Enter</button>
 </div>
 </div>
 <div class="col-lg-4"></div>
