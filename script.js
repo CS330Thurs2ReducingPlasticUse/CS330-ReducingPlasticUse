@@ -1,3 +1,51 @@
+function createAccount()
+{
+  if (document.getElementById('inputPassword').value != document.getElementById('inputPassword2').value)
+  {
+    document.getElementById('pass1').innerHTML = 'Password: passwords did not match';
+    document.getElementById('pass2').innerHTML = 'Reenter password: passwords did not match';
+  }
+  else {
+    {
+      window.open('home_page.html','_self');
+    }
+  }
+}
+
+
+var  norbucksString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Norris Starbucks</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Norris Starbucks</b>, also referred to as <b>Norbucks</b>, is a large ' +
+            'coffee shops located at 1999 S Campus Dr. Evanston, IL 60208'+
+            'At this location, oven-warmed food and pastries are served in addition'+
+            'to coffee to be ordered. There is a 25 cent discount if you bring your '+
+            'own cup to this location.</p>'+
+            '<p><a href="https://www.starbucks.com/store-locator/store/17739/northwestern-university-norris-univ-1999-s-campus-dr-evanston-il-602082500-us">'+
+            'Norris University Starbucks Website Link</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+
+var  brewbikeString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Brewbike Coffee</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Brewbike Coffee</b>, also referred to as <b>Brewbike</b>, is a large ' +
+            'coffee shop located in University Library (Main) at Cafe Bergson, 1970 Campus Drive'+
+            ' Northwestern University Evanston, IL 60201'+
+            'At this location, oven-warmed food and pastries are served in addition'+
+            'to coffee to be ordered. There is a 50 cent discount if you bring your '+
+            'own cup to this location.</p>'+
+            '<p><a href="https://brewbikecoffee.com/locations#northwestern-section">'+
+            'Brewbike Coffee Website Link</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+
 function initMap()
 {
   var uluru = {lat: 42.0579, lng: -87.6805};
@@ -12,12 +60,27 @@ function initMap()
   var marker1 = new google.maps.Marker({
     position: brewBike,
     map: map
-  })
+  });
 
   var marker2 = new google.maps.Marker({
     position: norBucks,
-    map: map
-  })
+    map: map,
+  });
 
+  var infowindow1 = new google.maps.InfoWindow({
+    content: brewbikeString
+  });
 
-}
+  var infowindow2 = new google.maps.InfoWindow({
+    content: norbucksString
+  });
+
+  marker1.addListener('click',function(){
+    infowindow1.open(map,marker1);
+  });
+
+  marker2.addListener('click',function(){
+    infowindow2.open(map,marker2);
+  });
+
+}//end of initMap
