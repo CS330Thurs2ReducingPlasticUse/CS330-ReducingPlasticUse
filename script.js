@@ -4,13 +4,13 @@ function createAccount()
     if (document.getElementById('inputPassword').value != document.getElementById('inputPassword2').value)
     {
       no_problems = false;
-      document.getElementById('pass1').innerHTML = 'Password: passwords did not match';
-      document.getElementById('pass2').innerHTML = 'Reenter password: passwords did not match';
+      document.getElementById('pass1').innerHTML = "Password: <span class='warning'> passwords did not match</span>";
+      document.getElementById('pass2').innerHTML = "Reenter Password: <span class='warning'>passwords did not match</span>";
     }
     if (document.getElementById('inputEmail').value == "")
     {
       no_problems = false;
-      document.getElementById('Email').innerHTML = 'Email Address: enter an email address';
+      document.getElementById('Email').innerHTML = "Email Address: <span class='warning'>enter an email address</span>";
     }
     else {
       document.getElementById('Email').innerHTML = 'Email Address:'
@@ -18,7 +18,7 @@ function createAccount()
     if (document.getElementById('inputFirstName').value == "")
     {
       no_problems = false;
-      document.getElementById('FirstName').innerHTML = 'First Name: enter a first name';
+      document.getElementById('FirstName').innerHTML = "First Name: <span class='warning'>enter a first name</span>";
     }
     else {
       document.getElementById('FirstName').innerHTML = 'First Name:'
@@ -26,7 +26,7 @@ function createAccount()
     if (document.getElementById('inputLastName').value == "")
     {
       no_problems = false;
-      document.getElementById('LastName').innerHTML = 'Last Name: enter a last name';
+      document.getElementById('LastName').innerHTML = "Last Name: <span class='warning'>enter a last name</span>";
     }
     else {
       document.getElementById('LastName').innerHTML = 'Last Name:'
@@ -34,7 +34,7 @@ function createAccount()
     if (document.getElementById('inputUserName').value == "")
     {
       no_problems = false;
-      document.getElementById('UserName').innerHTML = 'Username: enter a username';
+      document.getElementById('UserName').innerHTML = "Username: <span class='warning'>enter a username</span>";
     }
     else {
       document.getElementById('UserName').innerHTML = 'Username:'
@@ -42,7 +42,7 @@ function createAccount()
     if (document.getElementById('inputPhoneNumber').value == "")
     {
       no_problems = false;
-      document.getElementById('PhoneNumber').innerHTML = 'Phone Number: enter a phone number';
+      document.getElementById('PhoneNumber').innerHTML = "Phone Number: <span class='warning'>enter a phone number</span>";
     }
     else {
       document.getElementById('PhoneNumber').innerHTML = 'Phone Number:'
@@ -50,12 +50,12 @@ function createAccount()
     if (document.getElementById('inputPassword').value == "")
     {
       no_problems = false;
-      document.getElementById('pass1').innerHTML = 'Password: enter a password';
+      document.getElementById('pass1').innerHTML = "Password <span class='warning'>enter a password</span>";
     }
     if (document.getElementById('inputPassword2').value == "")
     {
       no_problems = false;
-      document.getElementById('pass2').innerHTML = 'Password: reenter your password';
+      document.getElementById('pass2').innerHTML = "Password <span class='warning'>reenter a password</span>";
     }
     if (no_problems) {
       window.open('home_page.html','_self');
