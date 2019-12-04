@@ -68,7 +68,7 @@ function login()
   if (document.getElementById('inputEmail/Un').value == "")
   {
     no_problems = false;
-    document.getElementById('loginUsername').innerHTML = 'Email Address or Username: enter an email or username';
+    document.getElementById('loginUsername').innerHTML = "Email Address or Username: <span class='warning'>enter an email or username</span>";
   }
   else {
     document.getElementById('loginUsername').innerHTML = 'Email Address or Username:'
@@ -76,7 +76,7 @@ function login()
   if (document.getElementById('inputPassword3').value == "")
   {
     no_problems = false;
-    document.getElementById('loginPassword').innerHTML = 'Password: enter a password';
+    document.getElementById('loginPassword').innerHTML = "Password <span class='warning'>enter a password</span>";
   }
   else {
     document.getElementById('loginPassword').innerHTML = 'Password:'
@@ -122,7 +122,7 @@ var  brewbikeString = '<div id="content">'+
 
 function initMap()
 {
-  var uluru = {lat: 42.0579, lng: -87.6805};
+  var uluru = {lat: 42.0579, lng: -87.6725};
   var brewBike = {lat: 42.0530, lng: -87.673890};
   var norBucks = {lat: 42.0534, lng: -87.672710};
 
