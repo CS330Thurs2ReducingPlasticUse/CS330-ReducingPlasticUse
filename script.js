@@ -50,12 +50,12 @@ function createAccount()
     if (document.getElementById('inputPassword').value == "")
     {
       no_problems = false;
-      document.getElementById('pass1').innerHTML = "Password <span class='warning'>enter a password</span>";
+      document.getElementById('pass1').innerHTML = "Password: <span class='warning'>enter a password</span>";
     }
     if (document.getElementById('inputPassword2').value == "")
     {
       no_problems = false;
-      document.getElementById('pass2').innerHTML = "Password <span class='warning'>reenter a password</span>";
+      document.getElementById('pass2').innerHTML = "Reenter Password: <span class='warning'>reenter a password</span>";
     }
     if (no_problems) {
       window.open('home_page.html','_self');
